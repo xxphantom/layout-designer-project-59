@@ -1,8 +1,11 @@
-html {
-  box-sizing: border-box;
+@import "../../node_modules/bootstrap/scss/functions";
 
-  &::after {
-    font-size: 72px;
-    content: "Stream!";
-  }
-}
+// Default variable overrides
+@import "./variables.scss";
+
+// // Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// // Optional Bootstrap components
+@import "../../node_modules/bootstrap/scss/bootstrap";
