@@ -1,0 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+html::after {
+  font-size: 72px;
+  content: "Stream!";
+}
