@@ -1,0 +1,15 @@
+@use "sass:map";
+
+$radius-utilites: rounded rounded-top rounded-end rounded-bottom rounded-start;
+
+
+@each $utility-name in $radius-utilites {
+  $utilities: map-merge(
+    $utilities,
+    (
+      #{$utility-name}: (
+        map.merge(map.get($utilities, $utility-name), ( responsive: true ))
+      ),
+    )
+  );
+}
