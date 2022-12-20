@@ -1,0 +1,55 @@
+@use "sass:map";
+
+.message {
+  display: flex;
+  padding-left: map.get($spacers, 3);
+  padding-right: map.get($spacers, 3);
+
+  align-items: center;
+
+  text-decoration: none;
+
+  box-shadow: $box-shadow-sm;
+
+  &-body {
+    display: grid;
+    flex-grow: 1;
+
+    padding: map.get($spacers, 4);
+    overflow: hidden;
+
+    * {
+      margin: 0;
+    }
+  }
+
+  &-name-time {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-name {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    color: $body-color;
+  }
+
+  &-time, &-text {
+    font-size: $font-size-sm;
+    color: map.get($theme-colors, 'secondary');
+  }
+
+  &-text {
+    display: inline-block;
+    overflow: hidden;
+
+    max-width: 100%;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

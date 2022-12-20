@@ -1,0 +1,9 @@
+mixin message(name, message, time, avatar)
+  a.message.mb-3
+    .message-avatar
+      img.avatar(src=avatar, alt="")
+    .message-body
+      .message-name-time
+        p.message-name= name
+        p.message-time= time
+      p.message-text= message

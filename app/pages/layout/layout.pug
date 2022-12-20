@@ -6,17 +6,17 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Layout Designer Project 3
     link(rel="stylesheet", href="styles/style.css")
-  body.bg-gray
-    .container-xxl.vh-100.p-0.p-md-4
+  body.bg-gray.svh-100
+    .container-xxl.h-100.p-0.p-md-4
       .row.h-100.gx-0.rounded-md.overflow-hidden
         .main-area.col-lg-4.h-100.d-flex.flex-column-reverse.flex-lg-column
           block header
-          .flex-grow-1.bg-light.border-end.pt-3.px-4.scrollable
-            #chats.p-4.d-none
+          .flex-grow-1.bg-light.border-end.px-4.scrollable
+            #chats.pt-5.d-none
               block chat
-            #contacts.p-4.d-none
+            #contacts.pt-5.d-none
               block contacts
-            #profile.p-3.d-none
+            #profile.pt-5.d-none
               block profile
         .desktop-area.d-none.d-lg-flex.justify-content-center.align-items-center.col-lg-8.h-100.bg-light
           block desktop-area

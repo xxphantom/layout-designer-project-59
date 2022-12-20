@@ -12,3 +12,14 @@ $radius-utilites: rounded rounded-top rounded-end rounded-bottom rounded-start;
     )
   );
 }
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "small-viewport-height": (
+      property: height,
+      class: svh,
+      values: (100: 100svh)
+    ),
+  )
+);

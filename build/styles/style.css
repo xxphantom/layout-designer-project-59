@@ -8363,6 +8363,10 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+.svh-100 {
+  height: 100svh !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -11134,15 +11138,58 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   color: #6C757D;
 }
-.contact:hover {
-  background-color: #4545A5;
+@media (any-hover: hover) {
+  .contact:hover {
+    background-color: #4545A5;
+    cursor: pointer;
+  }
+  .contact:hover .contact-name {
+    color: #FBFBFB;
+  }
+  .contact:hover .contact-status {
+    color: #efefef;
+  }
+}
+
+.message {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.message-body {
+  display: grid;
+  flex-grow: 1;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.message-body * {
+  margin: 0;
+}
+.message-name-time {
+  display: flex;
+  justify-content: space-between;
+}
+.message-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #212529;
+}
+.message-time, .message-text {
+  font-size: 0.875rem;
+  color: #6C757D;
+}
+.message-text {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.message:hover {
   cursor: pointer;
-}
-.contact:hover .contact-name {
-  color: #FBFBFB;
-}
-.contact:hover .contact-status {
-  color: #efefef;
 }
 
 .avatar {
