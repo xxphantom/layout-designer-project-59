@@ -3,12 +3,11 @@
 .contact {
   display: flex;
 
-  padding-top: map.get($spacers, 3);
-  padding-bottom: map.get($spacers, 3);
+  padding: map.get($spacers, 3);
   column-gap: $grid-gutter-width;
   align-items: center;
+  text-decoration: none;
 
-  padding-left: map.get($spacers, 3);
   box-shadow: $box-shadow-sm;
 
   &-name {
@@ -16,12 +15,14 @@
     margin: 0;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
+    color: $body-color;
   }
 
   &-status {
     display: block;
     margin: 0;
     font-size: $font-size-sm;
+    color: map.get($theme-colors, 'secondary');
   }
 
   &:hover {

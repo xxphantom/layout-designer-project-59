@@ -1,0 +1,6 @@
+mixin icon(id)
+  - const path = "images/sprite.svg#";
+  - const icon = "icon ";
+  - className = attributes.class || '';
+  svg(class!=icon+className)
+    use(xlink:href!=path+id)
