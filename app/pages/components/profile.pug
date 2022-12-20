@@ -1,0 +1,29 @@
+h2.h2.mb-4 Профиль
++search-form('Поиск по сообщениям')
+figure.text-center.p-3.mb-5
+  img.d-block.mx-auto.mt-4.rounded-pill(src="images/avatar_1.jpg", alt="" width="90px" height="auto")
+  figcaption
+    p.h6.mt-2.mb-4 Кодовёнок Хекслетович
+    p.mb-4.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+
+ul.bg-.list-group.list-group-flush
+  li.list-group-item.d-flex.align-items-center.py-2.px-3
+    .me-auto
+      div.small.text-secondary Страна
+      span.small Москва, Россия
+    +icon("earth")
+  li.list-group-item.d-flex.align-items-center.py-2.px-3
+    .me-auto
+      div.small.text-secondary Телефон
+      span.small +7 (499) 123-45-67
+    +icon("phone")
+  li.list-group-item.d-flex.align-items-center.py-2.px-3
+    .me-auto
+      div.small.text-secondary Email
+      span.small nikita.m@hexlet.io
+    +icon("email")
+  li.list-group-item.d-flex.align-items-center.py-2.px-3
+    .me-auto
+      div.small.text-secondary Twitter
+      span.small @n_mikhaylov
+    +icon("twitter")

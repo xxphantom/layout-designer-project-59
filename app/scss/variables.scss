@@ -47,3 +47,11 @@ $enable-shadows: true;
 // Header
 $nav-link-color: map.get($theme-colors,"light");
 $nav-link-hover-color: map.get($theme-colors, "gray");
+
+// Typograph
+$font-size-xs: 0.8rem;
+
+$font-sizes: map-merge($font-sizes, (7: $font-size-xs));
+
+$list-group-bg:  map.get($theme-colors, "light");
+$list-group-border-color: $border-color;

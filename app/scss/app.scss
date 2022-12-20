@@ -1,10 +1,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
+
+@import "../../node_modules/bootstrap/scss/variables";
+
 // Default variable overrides
 @import "./variables.scss";
 
-// // Required
-@import "../../node_modules/bootstrap/scss/variables";
+// Required
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/utilities";
@@ -15,9 +17,8 @@
 
 @import "mixins/mixins";
 
-@import "./components/header";
 @import "./components/contact";
-@import "./components/message.scss";
+@import "./components/message";
 @import "./components/avatar";
 @import "./components/scrollable";
 
@@ -31,4 +32,8 @@
 div:target {
   display: block!important;
   animation: fadeIn 0.8s;
+}
+
+.icon {
+  fill: $light;
 }

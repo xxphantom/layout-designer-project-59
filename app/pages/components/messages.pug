@@ -20,7 +20,7 @@
   ];
 
 h2.h2.mb-4 Сообщения
-input.form-control-plaintext.border-bottom.p-4(type="text", placeholder="Поиск по сообщениям")
++search-form('Поиск по сообщениям')
 each messageData in messagesData
   - const { name, message, time, avatar } = messageData;
   +message(name, message, time, avatar)

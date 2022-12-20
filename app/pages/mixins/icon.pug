@@ -1,6 +1,10 @@
-mixin icon(id)
+mixin icon(id, width = "16px", height = "")
+  -
+    if (height === "") {
+      height = width;
+    }
   - const path = "images/sprite.svg#";
   - const icon = "icon ";
   - className = attributes.class || '';
-  svg(class!=icon+className)
+  svg(class!=icon+className, width!= width, height!= height)
     use(xlink:href!=path+id)
