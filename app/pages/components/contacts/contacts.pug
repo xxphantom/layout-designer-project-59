@@ -1,9 +1,0 @@
-include data.pug
-
-h2.h2.mb-4 Контакты
-input.form-control-plaintext.border-bottom.p-4(type="text", placeholder="Поиск по контактам")
-each contacts, letter in data
-  p.mt-5.text-muted= letter
-  each contactData in contacts
-    - const { name, status, avatar } = contactData;
-    +contact(name, status, avatar)

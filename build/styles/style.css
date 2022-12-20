@@ -11118,16 +11118,19 @@ textarea.form-control-lg {
   text-decoration: none;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-.contact-name {
-  display: block;
+.contact-body {
+  display: flex;
+  flex-direction: column;
+}
+.contact-body > * {
   margin: 0;
+}
+.contact-name {
   font-size: 1rem;
   font-weight: 700;
   color: #212529;
 }
 .contact-status {
-  display: block;
-  margin: 0;
   font-size: 0.875rem;
   color: #6C757D;
 }

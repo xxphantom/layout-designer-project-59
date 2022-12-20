@@ -1,6 +1,6 @@
 mixin contact(name, status, avatar)
   a.contact.mb-3
     img.avatar(src=avatar, alt="")
-    div
-      .contact-name= name
-      .contact-status= status
+    .contact-body
+      p.contact-name= name
+      p.contact-status= status

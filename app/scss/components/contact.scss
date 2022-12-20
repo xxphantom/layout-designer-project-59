@@ -10,17 +10,22 @@
 
   box-shadow: $box-shadow-sm;
 
+  &-body {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      margin: 0;
+    }
+  }
+
   &-name {
-    display: block;
-    margin: 0;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
     color: $body-color;
   }
 
   &-status {
-    display: block;
-    margin: 0;
     font-size: $font-size-sm;
     color: map.get($theme-colors, 'secondary');
   }
