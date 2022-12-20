@@ -1,0 +1,39 @@
+@use "sass:map";
+
+.contact {
+  display: flex;
+
+  padding-top: map.get($spacers, 3);
+  padding-bottom: map.get($spacers, 3);
+  column-gap: $grid-gutter-width;
+  align-items: center;
+
+  padding-left: map.get($spacers, 3);
+  box-shadow: $box-shadow-sm;
+
+  &-name {
+    display: block;
+    margin: 0;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+  }
+
+  &-status {
+    display: block;
+    margin: 0;
+    font-size: $font-size-sm;
+  }
+
+  &:hover {
+    background-color: map.get($theme-colors, "primary");
+    cursor: pointer;
+
+    .contact-name {
+      color: map.get($theme-colors, "light");
+    }
+
+    .contact-status {
+      color: map.get($theme-colors, "gray");
+    }
+  }
+}

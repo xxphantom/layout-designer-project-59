@@ -1,14 +1,13 @@
-doctype html
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Layout Designer Project 3
-    link(rel="stylesheet", href="styles/style.css")
-  body.bg-gray
-    .container-xxl.vh-100.p-0.p-md-4
-      .wrapper.row.h-100.gx-0.rounded-md
-        .main-area.col-md-4.h-100.d-flex.flex-column-reverse.flex-md-column
-          include components/header.pug
-          .flex-grow-1.bg-light.border-end.pt-3.px-4
-        .desktop-area.col-md-8.h-100.bg-light
+extends layout/layout
+
+block header
+  include components/header
+
+block chat
+  | Чат с котиками
+block contacts
+  include components/contacts/contacts
+block profile
+  | Мой профиль
+block desktop-area
+  include components/greeting-card.pug

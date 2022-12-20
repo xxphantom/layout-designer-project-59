@@ -1,0 +1,13 @@
+mixin icon(id)
+  - const path = "images/sprite.svg#";
+  - const icon = "icon ";
+  - className = attributes.class || '';
+  svg(class!=icon+className)
+    use(xlink:href!=path+id)
+
+mixin contact(name, status, avatar)
+  .contact.mt-3
+    img.avatar(src=avatar, alt="")
+    div
+      .contact-name= name
+      .contact-status= status

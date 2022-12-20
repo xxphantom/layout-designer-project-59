@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $gray:      #efefef;
 $primary:   #4545A5;
 $secondary: #6C757D;
@@ -20,7 +22,28 @@ $theme-colors: (
   "dark":       $dark
 );
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px,
+);
+
+// Layout
 $border-color: $gray;
 $border-radius: 1rem;
+$enable-shadows: true;
 
-$enable-shadows: true
+// Header
+$nav-link-color: map.get($theme-colors,"light");
+$nav-link-hover-color: map.get($theme-colors, "gray");

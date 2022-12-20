@@ -13,11 +13,21 @@
 // // Optional Bootstrap components
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@import "mixins/mixins";
 
-@import "./components/header.scss";
+@import "./components/header";
+@import "./components/contact";
+@import "./components/avatar";
+@import "./components/scrollable";
 
 @import "./main-area";
 
-.wrapper {
-  overflow: hidden;
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+div:target {
+  display: block!important;
+  animation: fadeIn 0.8s;
 }

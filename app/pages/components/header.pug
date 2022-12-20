@@ -1,9 +1,15 @@
-header.header.bg-primary.text-light.d-flex.p-3
-  ul.nav
-    li.nav-item 1
-    li.nav-item 2
-    li.nav-item 3
-    li.nav-item 4
-    li.nav-item 5
-    li.nav-item 6
-    li.nav-item 7
+nav.navbar.header.bg-primary.p-3
+  +icon("logo")
+  ul.nav.small.text-light
+    li.nav-item
+      a.nav-link.flex-fill(href="#contacts")
+        +icon("people")(class="me-2")
+        span.d-none.d-xxl-inline Контакты
+    li.nav-item
+      a.nav-link(href="#chats")
+        +icon("chat")(class="me-2")
+        span.d-none.d-xxl-inline Сообщения
+    li.nav-item
+      a.nav-link(href="#profile")
+        +icon("person")(class="me-2")
+        span.d-none.d-xxl-inline Профиль
