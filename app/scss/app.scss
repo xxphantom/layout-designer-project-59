@@ -20,20 +20,28 @@
 @import "./components/contact";
 @import "./components/message";
 @import "./components/avatar";
-@import "./components/scrollable";
-
-@import "./main-area";
 
 @keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
 }
 
-div:target {
+:is(#messages, #contacts, #profile):target {
   display: block!important;
   animation: fadeIn 0.8s;
 }
 
+@include media-breakpoint-down(lg) {
+  #current-chat:target {
+    display: block!important;
+    animation: fadeIn 0.8s;
+  }
+}
+
 .icon {
   fill: $light;
+}
+
+.scrollable {
+  @include hide-scrollbar();
 }

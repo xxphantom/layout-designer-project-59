@@ -8,7 +8,6 @@
   align-items: center;
   text-decoration: none;
 
-  box-shadow: $box-shadow-sm;
 
   &-body {
     display: flex;
@@ -31,7 +30,7 @@
   }
 
   @media (any-hover: hover) {
-    &:hover {
+    &-hover.contact:hover {
       background-color: map.get($theme-colors, "primary");
       cursor: pointer;
 

@@ -1,0 +1,14 @@
+mixin incoming(name, text, timeAgo, avatarPath)
+  .d-flex.align-items-end.gap-3.mb-3.w-lg-75
+    img.avatar(src=avatarPath, alt="").d-none.d-lg-block
+    .bg-gray.p-4.rounded.shadow-sm
+      .fw-bold.mb-1= name
+      .text-secondary.pb-2= text
+      .border-top.small.text-secondary.opacity-75.pt-1= timeAgo
+
+mixin outbound(text, timeAgo, avatarPath)
+  .d-flex.align-items-end.gap-3.mb-3.w-lg-75.ms-auto
+    img.avatar(src=avatarPath, alt="").d-none.d-lg-block
+    .bg-gray.p-4.bg-primary.rounded.shadow-sm
+      .text-light.pb-2= text
+      .border-top.small.text-white.opacity-75.pt-1= timeAgo

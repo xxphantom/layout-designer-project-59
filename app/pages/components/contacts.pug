@@ -1,5 +1,5 @@
 -
-  const data = {
+  const contactsData = {
     "A": [{
       name: "Алексей Примадонин",
       status: "Онлайн",
@@ -36,10 +36,11 @@
     }],
   }
 
-h2.h2.mb-4 Контакты
-+search-form("Поиск по контактам")
-each contacts, letter in data
-  p.mt-5.text-muted= letter
-  each contactData in contacts
-    - const { name, status, avatar } = contactData;
-    +contact(name, status, avatar)
+#contacts.pt-5.px-4.d-none
+  h2.h2.mb-4 Контакты
+  +search-form("Поиск по контактам")
+  each contacts, letter in contactsData
+    p.mt-5.text-muted= letter
+    each contactData in contacts
+      - const { name, status, avatar } = contactData;
+      +contact(name, status, avatar)

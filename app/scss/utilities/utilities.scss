@@ -1,8 +1,18 @@
 @use "sass:map";
 
-$radius-utilites: rounded rounded-top rounded-end rounded-bottom rounded-start;
+$utilities-names: "rounded"
+  "rounded-top"
+  "rounded-end"
+  "rounded-bottom"
+  "rounded-start"
+  "border"
+  "border-top"
+  "border-end"
+  "border-bottom"
+  "border-start"
+  "width";
 
-@each $utility-name in $radius-utilites {
+@each $utility-name in $utilities-names {
   $utilities: map-merge(
     $utilities,
     (
@@ -20,6 +30,12 @@ $utilities: map-merge(
       property: height,
       class: svh,
       values: (100: 100svh)
+    ),
+    "rounded-left-top": (
+      responsive: true,
+      property: border-top-left-radius,
+      class: rounded-left-top,
+      values: (null: var(--#{$prefix}border-radius))
     ),
   )
 );

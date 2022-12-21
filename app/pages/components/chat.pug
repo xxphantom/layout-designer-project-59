@@ -1,0 +1,22 @@
+a.contact.bg-light.border-bottom.sticky-top.py-4.px-3.mb-5
+  img.avatar(src="images/avatar_1.jpg", alt="")
+  .contact-body
+    p.contact-name= "Вениамин Редакторович"
+    p.contact-status= "Онлайн"
+.px-5.h-100
+  +incoming(
+    "Вениамин Редакторович",
+     "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+      "8 минут назад",
+      "images/avatar_4.jpg")
+  +outbound("Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+   "8 минут назад",
+   "images/avatar_1.jpg")
+  +incoming(
+    "Вениамин Редакторович",
+     "Лады",
+      "5 минут назад",
+      "images/avatar_4.jpg")
+  +outbound("А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+   "3 минут назад",
+   "images/avatar_1.jpg")

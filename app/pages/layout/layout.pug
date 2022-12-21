@@ -11,12 +11,9 @@ html(lang="ru")
       .row.h-100.gx-0.rounded-md.overflow-hidden
         .main-area.col-lg-4.h-100.d-flex.flex-column-reverse.flex-lg-column
           block header
-          .flex-grow-1.bg-light.border-end.px-4.scrollable
-            #chats.pt-5.d-none
+          .flex-grow-1.bg-light.border-end-lg.scrollable
               block chat
-            #contacts.pt-5.d-none
+              block messages
               block contacts
-            #profile.pt-5.d-none
               block profile
-        .desktop-area.d-none.d-lg-flex.justify-content-center.align-items-center.col-lg-8.h-100.bg-light
-          block desktop-area
+        block desktop-area
