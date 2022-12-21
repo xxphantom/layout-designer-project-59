@@ -4,8 +4,7 @@ block header
   include components/header-chat
 
 block chat
-  #current-chat.d-none
-    include components/chat
+  include components/mobile-chat
 block messages
   include components/messages
 block contacts
@@ -13,5 +12,4 @@ block contacts
 block profile
   include components/profile
 block desktop-area
-  .col-lg-8.h-100.bg-light.scrollable
-    include components/chat
+  include components/desktop-chat

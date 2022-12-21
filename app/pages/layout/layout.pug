@@ -7,13 +7,12 @@ html(lang="ru")
     title Layout Designer Project 3
     link(rel="stylesheet", href="styles/style.css")
   body.bg-gray.svh-100
-    .container-xxl.h-100.p-0.p-md-4
-      .row.h-100.gx-0.rounded-md.overflow-hidden
-        .main-area.col-lg-4.h-100.d-flex.flex-column-reverse.flex-lg-column
+    .container-xxl.p-0.p-md-4.h-100
+      .row.h-100.gx-0
+        .main-area.col-lg-4.d-flex.flex-column-reverse.flex-lg-column.bg-light.border-end-lg.h-100
           block header
-          .flex-grow-1.bg-light.border-end-lg.scrollable
-              block chat
-              block messages
-              block contacts
-              block profile
+          block chat
+          block messages
+          block contacts
+          block profile
         block desktop-area

@@ -11439,6 +11439,17 @@ textarea.form-control-lg {
   border-radius: 50rem;
 }
 
+.sendIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50rem;
+  background-color: #4545A5;
+  color: #fff;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -11454,7 +11465,7 @@ textarea.form-control-lg {
 
 @media (max-width: 991.98px) {
   #current-chat:target {
-    display: block !important;
+    display: flex !important;
     animation: fadeIn 0.8s;
   }
 }

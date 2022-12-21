@@ -20,6 +20,7 @@
 @import "./components/contact";
 @import "./components/message";
 @import "./components/avatar";
+@import "./components/sendIcon";
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -33,7 +34,7 @@
 
 @include media-breakpoint-down(lg) {
   #current-chat:target {
-    display: block!important;
+    display: flex!important;
     animation: fadeIn 0.8s;
   }
 }
