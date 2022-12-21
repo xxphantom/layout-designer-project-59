@@ -3,14 +3,14 @@ nav.navbar.header.bg-primary.p-3
   ul.nav.small.text-light
     block chat
     li.nav-item
-      a.nav-link.flex-fill(href="#contacts")
+      a.nav-link.flex-fill(href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts")
         +icon("people", "25px")(class="me-2")
         span.d-none.d-xxl-inline Контакты
     li.nav-item
-      a.nav-link(href="#messages")
+      a.nav-link(href="#chats" data-bs-toggle="tab" data-bs-target="#chats")
         +icon("chat", "25px")(class="me-2")
         span.d-none.d-xxl-inline Сообщения
     li.nav-item
-      a.nav-link(href="#profile")
+      a.nav-link(href="#profile" data-bs-toggle="tab" data-bs-target="#profile")
         +icon("person", "25px")(class="me-2")
         span.d-none.d-xxl-inline Профиль
