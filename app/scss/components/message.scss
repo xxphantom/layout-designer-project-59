@@ -2,10 +2,10 @@
 
 .message {
   display: flex;
-  padding-left: map.get($spacers, 3);
-  padding-right: map.get($spacers, 3);
 
   align-items: center;
+  padding-right: map.get($spacers, 3);
+  padding-left: map.get($spacers, 3);
 
   text-decoration: none;
 
@@ -29,24 +29,26 @@
   }
 
   &-name {
-    font-size: $font-size-base;
-    font-weight: $font-weight-bold;
     color: $body-color;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
   }
 
-  &-time, &-text {
+  &-time,
+  &-text {
+    color: map.get($theme-colors, "secondary");
     font-size: $font-size-sm;
-    color: map.get($theme-colors, 'secondary');
   }
 
   &-text {
     display: inline-block;
-    overflow: hidden;
 
     max-width: 100%;
+    overflow: hidden;
+
+    white-space: nowrap;
 
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   &:hover {

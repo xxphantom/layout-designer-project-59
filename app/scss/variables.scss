@@ -1,17 +1,16 @@
 @use "sass:map";
 
-$gray:      #efefef;
-$primary:   #4545A5;
-$secondary: #6C757D;
-$success:   #28A745;
-$info:      #17A2B8;
-$warning:   #FFC107;
-$danger:    #DC3545;
-$light:     #FBFBFB;
-$dark:      #343A40;
-
+$gray: #efefef;
+$primary: #4545a5;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #fbfbfb;
+$dark: #343a40;
 $theme-colors: (
-  'gray':       $gray,
+  "gray":       $gray,
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -21,7 +20,6 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark
 );
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -30,7 +28,6 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1500px,
 );
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -45,13 +42,11 @@ $border-radius: 1rem;
 $enable-shadows: true;
 
 // Header
-$nav-link-color: map.get($theme-colors,"light");
+$nav-link-color: map.get($theme-colors, "light");
 $nav-link-hover-color: map.get($theme-colors, "gray");
 
 // Typograph
 $font-size-xs: 0.8rem;
-
 $font-sizes: map-merge($font-sizes, (7: $font-size-xs));
-
-$list-group-bg:  map.get($theme-colors, "light");
+$list-group-bg: map.get($theme-colors, "light");
 $list-group-border-color: $border-color;

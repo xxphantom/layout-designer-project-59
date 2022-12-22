@@ -7,9 +7,9 @@
   text-decoration: none;
 
   &-body {
-    padding: map.get($spacers, 4);
     display: flex;
     flex-direction: column;
+    padding: map.get($spacers, 4);
 
     > * {
       margin: 0;
@@ -17,14 +17,14 @@
   }
 
   &-name {
-    font-size: $font-size-base;
-    font-weight: $font-weight-bold;
     color: $body-color;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
   }
 
   &-status {
+    color: map.get($theme-colors, "secondary");
     font-size: $font-size-sm;
-    color: map.get($theme-colors, 'secondary');
   }
 
   @media (any-hover: hover) {

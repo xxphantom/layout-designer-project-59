@@ -1,6 +1,6 @@
 @use "sass:map";
 
-.sendIcon {
+.send-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,8 +8,13 @@
   width: 50px;
   height: 50px;
 
-  border-radius: $border-radius-pill;
+  color: $white;
+
   background-color: map.get($theme-colors, "primary");
 
-  color: $white;
+  border-radius: $border-radius-pill;
+}
+
+.icon {
+  fill: $light;
 }
