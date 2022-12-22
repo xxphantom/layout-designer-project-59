@@ -11358,12 +11358,11 @@ textarea.form-control-lg {
 }
 .contact {
   display: flex;
-  padding: 1rem;
-  column-gap: 1.5rem;
   align-items: center;
   text-decoration: none;
 }
 .contact-body {
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }

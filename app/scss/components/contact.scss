@@ -2,14 +2,12 @@
 
 .contact {
   display: flex;
-
-  padding: map.get($spacers, 3);
-  column-gap: $grid-gutter-width;
   align-items: center;
+
   text-decoration: none;
 
-
   &-body {
+    padding: map.get($spacers, 4);
     display: flex;
     flex-direction: column;
 
