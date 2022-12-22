@@ -36,11 +36,10 @@
     }],
   }
 
-.flex-grow-1.pt-5.px-4.scrollable.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
-  h2.h2.mb-4 Контакты
-  +search-form("Поиск по контактам")
-  each contacts, letter in contactsData
-    p.mt-5.text-muted= letter
-    each contactData in contacts
-      - const { name, status, avatar } = contactData;
-      +contact(name, status, avatar)
+h2.h2.mb-4 Контакты
++search-form("Поиск по контактам")
+each contacts, letter in contactsData
+  p.mt-5.text-muted= letter
+  each contactData in contacts
+    - const { name, status, avatar } = contactData;
+    +contact(name, status, avatar)

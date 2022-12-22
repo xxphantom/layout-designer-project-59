@@ -1,6 +1,13 @@
 extends nav
 
-block chat
+block current-chat
   li.nav-item.d-lg-none
     a.nav-link(href="#current-chat" data-bs-toggle="tab" data-bs-target="#current-chat")
       +icon("chat-left-text", "25px")(class="me-2")
+
+block dialogs
+  li.nav-item
+    a.nav-link.active.pe-md-0(href="#chats" data-bs-toggle="tab" data-bs-target="#chats")
+      +icon("chat", "25px")(class="me-2")
+      span.d-none.d-md-inline Сообщения
+

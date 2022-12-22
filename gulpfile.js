@@ -30,8 +30,8 @@ const paths = {
     dst: 'build/images/'
   },
   js: {
-    watch: 'app/assets/js/*',
-    src: 'app/assets/js/*',
+    watch: 'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    src: 'node_modules/bootstrap/dist/js/bootstrap.min.js',
     dst: 'build/js/',
   },
   all: {

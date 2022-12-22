@@ -1,15 +1,9 @@
 nav.navbar.header.bg-primary.p-3
   +icon("logo", "25px")(class="me-4")
   ul.nav.small.text-light.d-flex.justify-content-md-between.justify-content-end.flex-grow-1
-    block chat
-    li.nav-item
-      a.nav-link.pe-md-0(href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts")
-        +icon("people", "25px")(class="me-2")
-        span.d-none.d-md-inline Контакты
-    li.nav-item
-      a.nav-link.pe-md-0(href="#chats" data-bs-toggle="tab" data-bs-target="#chats")
-        +icon("chat", "25px")(class="me-2")
-        span.d-none.d-md-inline Сообщения
+    block current-chat
+    block contacts
+    block dialogs
     li.nav-item
       a.nav-link(href="#profile" data-bs-toggle="tab" data-bs-target="#profile")
         +icon("person", "25px")(class="me-2")

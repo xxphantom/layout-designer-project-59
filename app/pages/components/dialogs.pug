@@ -19,9 +19,8 @@
     }
   ];
 
-.flex-grow-1.pt-5.px-4.scrollable.tab-pane.fade.active.show(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
-  h2.h2.mb-4 Чаты
-  +search-form('Поиск по сообщениям')
-  each dialogData in dialogsData
-    - const { name, message, time, avatar } = dialogData;
-    +dialog(name, message, time, avatar)
+h2.h2.mb-4 Чаты
++search-form('Поиск по сообщениям')
+each dialogData in dialogsData
+  - const { name, message, time, avatar } = dialogData;
+  +dialog(name, message, time, avatar)
