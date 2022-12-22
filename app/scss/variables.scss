@@ -25,14 +25,15 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
+  xl: 1400px,
   xxl: 1500px,
 );
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
+  xl: 1340px,
   xxl: 1440px,
 );
 
@@ -47,6 +48,6 @@ $nav-link-hover-color: map.get($theme-colors, "gray");
 
 // Typograph
 $font-size-xs: 0.8rem;
-$font-sizes: map-merge($font-sizes, (7: $font-size-xs));
+$font-sizes: map.merge($font-sizes, (7: $font-size-xs));
 $list-group-bg: map.get($theme-colors, "light");
 $list-group-border-color: $border-color;

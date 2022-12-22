@@ -1,7 +1,7 @@
 extends nav
 
 block current-chat
-  li.nav-item.d-lg-none
+  li.nav-item.d-md-none
     a.nav-link(href="#current-chat" data-bs-toggle="tab" data-bs-target="#current-chat")
       +icon("chat-left-text", "25px")(class="me-2")
 
@@ -9,11 +9,11 @@ block dialogs
   li.nav-item
     a.nav-link.active.pe-md-0(href="#chats" data-bs-toggle="tab" data-bs-target="#chats")
       +icon("chat", "25px")(class="me-2")
-      span.d-none.d-md-inline Сообщения
+      span.d-none.d-xl-inline Сообщения
 
 block contacts
     li.nav-item
       a.nav-link.pe-md-0(href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts")
         +icon("people", "25px")(class="me-2")
-        span.d-none.d-md-inline Контакты
+        span.d-none.d-xl-inline Контакты
 
