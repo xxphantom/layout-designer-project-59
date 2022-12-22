@@ -29,6 +29,11 @@ const paths = {
     src: 'app/assets/svg/*',
     dst: 'build/images/'
   },
+  js: {
+    watch: 'app/assets/js/*',
+    src: 'app/assets/js/*',
+    dst: 'build/js/',
+  },
   all: {
     src: 'app/**/*',
     dst: 'build/**/*'
@@ -81,13 +86,19 @@ export const images = () => (
 		.pipe(gulp.dest(paths.images.dst))
 );
 
-const jobs = gulp.parallel(styles, pages, images, svg);
+export const js = () => (
+	gulp.src(paths.js.src)
+		.pipe(gulp.dest(paths.js.dst))
+);
+
+const jobs = gulp.parallel(styles, pages, images, svg, js);
 
 const watchFiles = () => {
   gulp.watch(paths.images.watch, images);
   gulp.watch(paths.pages.watch, pages);
   gulp.watch(paths.styles.watch, styles);
   gulp.watch(paths.svg.watch, svg);
+  gulp.watch(paths.js.watch, js);
 }
 
 
