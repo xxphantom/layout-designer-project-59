@@ -37,7 +37,8 @@
   }
 
 h2.h2.mb-4 Контакты
-+search-form("Поиск по контактам")
+form.mb-5
+  +light-input("Поиск по контактам")
 each contacts, letter in contactsData
   p.mt-5.text-muted= letter
   each contactData in contacts

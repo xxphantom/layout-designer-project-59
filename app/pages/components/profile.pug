@@ -1,29 +1,30 @@
-.h-100.pt-5.px-4.scrollable.tab-pane.fade(id='profile' role='tabpanel' aria-labelledby='nav-profile-tab')
+.h-100.pt-5.px-4.scrollable.tab-pane.fade(id='profile' role='tabpanel' aria-labelledby='nav-profile-tab' tabindex=0)
   h2.h2.mb-4 Профиль
-  +search-form('Поиск по сообщениям')
+  form.mb-5
+    +light-input('Поиск по сообщениям')
   figure.text-center.p-3.mb-5
-    img.d-block.mx-auto.mt-4.rounded-pill(src="images/avatar_1.jpg", alt="" width="90px" height="auto")
+    img.d-block.mx-auto.mt-4.rounded-pill(src="images/avatar_1.jpg", alt="" width="90" height="90")
     figcaption
-      p.h6.fw-bold.mt-2.mb-4 Кодовёнок Хекслетович
-      p.mb-4.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+      p.h6.fw-bold.mt-2.mb-4(tabindex=0) Кодовёнок Хекслетович
+      p.mb-4.text-secondary(tabindex=0) Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
 
-  ul.list-group.list-group-flush
-    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3
+  ul.list-group.list-group-flush(tabindex=0)
+    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3(tabindex=0)
       .me-auto
         div.small.text-secondary Страна
         span.small Москва, Россия
       +icon("earth")
-    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3
+    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3(tabindex=0)
       .me-auto
         div.small.text-secondary Телефон
         span.small +7 (499) 123-45-67
       +icon("phone")
-    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3
+    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3(tabindex=0)
       .me-auto
         div.small.text-secondary Email
         span.small nikita.m@hexlet.io
       +icon("email")
-    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3
+    li.bg-white.list-group-item.d-flex.align-items-center.py-2.px-3(tabindex=0)
       .me-auto
         div.small.text-secondary Twitter
         span.small @n_mikhaylov

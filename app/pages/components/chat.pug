@@ -21,6 +21,7 @@ a.contact.sticky-top.border-bottom.px-3
    "3 минут назад",
    "images/avatar_1.jpg")
 .mx-lg-5.py-3.px-4.d-flex.align-items-center.border-top
-  span.text-secondary.me-auto Напишите сообщение...
+  form.text-secondary.me-auto
+    input.form-control-plaintext(type="text", placeholder="Напишите сообщение...")
   .send-icon
     +icon("cursor", "20px")

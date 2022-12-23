@@ -1,5 +1,5 @@
 mixin incoming(name, text, timeAgo, avatarPath)
-  .d-flex.align-items-end.gap-3.mb-3.w-lg-75
+  .d-flex.align-items-end.gap-3.mb-3.w-lg-75(tabindex=0)
     img.avatar(src=avatarPath, alt="").d-none.d-lg-block
     .bg-light.p-4.rounded.shadow-sm
       .fw-bold.mb-1= name
@@ -7,7 +7,7 @@ mixin incoming(name, text, timeAgo, avatarPath)
       .border-top.small.text-secondary.opacity-75.pt-1= timeAgo
 
 mixin outbound(text, timeAgo, avatarPath)
-  .d-flex.align-items-end.gap-3.mb-3.w-lg-75.ms-auto
+  .d-flex.align-items-end.gap-3.mb-3.w-lg-75.ms-auto(tabindex=0)
     img.avatar(src=avatarPath, alt="").d-none.d-lg-block
     .p-4.bg-primary.rounded.shadow-sm
       .text-light.pb-2= text

@@ -2,12 +2,12 @@ extends nav
 
 block dialogs
   li.nav-item
-    a.nav-link.pe-md-0(href="#chats" data-bs-toggle="tab" data-bs-target="#chats")
+    a.nav-link.pe-md-0(id="nav-chats-tab" href="#chats" data-bs-toggle="tab" data-bs-target="#chats" role="tab")
       +icon("chat", "25px")(class="me-2")
       span.d-none.d-xl-inline Сообщения
 
 block contacts
     li.nav-item
-      a.nav-link.active.pe-md-0(href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts")
+      a.nav-link.active.pe-md-0(id="nav-contacts-tab" href="#contacts" data-bs-toggle="tab" data-bs-target="#contacts" role="tab")
         +icon("people", "25px")(class="me-2")
         span.d-none.d-xl-inline Контакты

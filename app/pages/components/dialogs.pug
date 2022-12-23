@@ -20,7 +20,8 @@
   ];
 
 h2.h2.mb-4 Чаты
-+search-form('Поиск по сообщениям')
+form.mb-5
+  +light-input('Поиск по сообщениям')
 each dialogData in dialogsData
   - const { name, message, time, avatar } = dialogData;
   +dialog(name, message, time, avatar)
