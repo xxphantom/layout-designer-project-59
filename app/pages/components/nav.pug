@@ -1,7 +1,7 @@
 nav.navbar.header.bg-primary.p-3
-  a(href="#")
-    +icon("logo", "25px")(class="me-4")
-  ul.nav.small.text-light.d-flex.justify-content-xl-between.justify-content-end.flex-grow-1
+  a(href="#" aria-label="Главная")
+    +icon("logo", "25px")(class="me-4 fill-light")
+  ul.nav.small.text-light.d-flex.justify-content-xl-between.justify-content-end.flex-grow-1(role="tablist")
     block current-chat
     block contacts
     block dialogs

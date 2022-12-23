@@ -37,5 +37,11 @@ $utilities: map.merge(
       class: rounded-left-top,
       values: (null: var(--#{$prefix}border-radius))
     ),
+    "fill": (
+      property: fill,
+      class: fill,
+      values: $theme-colors,
+    ),
   )
 );
+

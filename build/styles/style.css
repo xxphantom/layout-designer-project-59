@@ -8375,6 +8375,42 @@ textarea.form-control-lg {
   border-top-left-radius: var(--bs-border-radius) !important;
 }
 
+.fill-gray {
+  fill: #efefef !important;
+}
+
+.fill-primary {
+  fill: #4545a5 !important;
+}
+
+.fill-secondary {
+  fill: #6c757d !important;
+}
+
+.fill-success {
+  fill: #28a745 !important;
+}
+
+.fill-info {
+  fill: #17a2b8 !important;
+}
+
+.fill-warning {
+  fill: #ffc107 !important;
+}
+
+.fill-danger {
+  fill: #dc3545 !important;
+}
+
+.fill-light {
+  fill: #fbfbfb !important;
+}
+
+.fill-dark {
+  fill: #343a40 !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -11438,19 +11474,14 @@ textarea.form-control-lg {
   border-radius: 50rem;
 }
 
-.send-icon {
+.btn-pill {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
-  color: #fff;
-  background-color: #4545a5;
+  border-width: 0;
   border-radius: 50rem;
-}
-
-.icon {
-  fill: #fbfbfb;
 }
 
 .scrollable {

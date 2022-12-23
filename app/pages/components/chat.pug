@@ -20,8 +20,8 @@ a.contact.sticky-top.border-bottom.px-3
   +outbound("А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
    "3 минут назад",
    "images/avatar_1.jpg")
-.mx-lg-5.py-3.px-4.d-flex.align-items-center.border-top
-  form.text-secondary.me-auto
-    input.form-control-plaintext(type="text", placeholder="Напишите сообщение...")
-  .send-icon
-    +icon("cursor", "20px")
+form.mx-lg-5.py-3.px-4.d-flex.align-items-center.border-top(action="#")
+  div.flex-grow-1
+    input.form-control-plaintext.p-0.text-secondary.me-3(placeholder= "Напишите сообщение...")
+  button.btn.btn-primary.btn-pill(type="submit" aria-label="Отправить сообщение")
+    +icon("cursor", "20px")(class="fill-light")
