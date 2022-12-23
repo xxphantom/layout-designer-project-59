@@ -18,10 +18,14 @@
       avatar: "/images/avatar_3.jpg"
     }
   ];
+  const chatLink = "chat.html";
 
 h2.h2.mb-4 Чаты
 form.mb-5
   +light-input('Поиск по сообщениям')
 each dialogData in dialogsData
   - const { name, message, time, avatar } = dialogData;
-  +dialog(name, message, time, avatar)
+  if name === "Вениамин Редакторович"
+    +dialog(name, message, time, avatar, chatLink)
+  else
+    +dialog(name, message, time, avatar)

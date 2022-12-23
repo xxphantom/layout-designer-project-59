@@ -1,5 +1,5 @@
-mixin dialog(name, message, time, avatar)
-  a.message.mb-3(tabindex=0)
+mixin dialog(name, message, time, avatar, url = "#")
+  a.message.mb-3(tabindex=0 href= url)
     .message-avatar
       img.avatar(src=avatar, alt="")
     .message-body

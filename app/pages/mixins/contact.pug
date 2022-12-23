@@ -1,5 +1,5 @@
-mixin contact(name, status, avatar)
-  a.contact.contact-hover.shadow-sm.mb-3(tabindex=0)
+mixin contact(name, status, avatar, href = "#")
+  a.contact.contact-hover.shadow-sm.mb-3(href= href tabindex=0)
     img.avatar(src=avatar, alt="")
     .contact-body
       p.contact-name= name
